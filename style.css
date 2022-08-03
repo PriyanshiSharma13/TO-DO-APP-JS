@@ -1,0 +1,288 @@
+body{
+    background-color: #322F3D;
+}
+#ps{
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #2E0249;  
+    color: #F806CC;
+}
+.mainContainerBlur{
+    filter: blur(8px);
+}
+.pageBlur{
+    filter: blur(8px);
+}
+/* 
+      font-family: 'Bubblegum Sans', cursive;
+      font-family: 'Comfortaa', cursive;
+ */
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#top{
+    width: 88%;
+    height: 110px;
+    position: absolute;
+    top: 40px;
+    left: 10%;
+}
+#taskText{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 3.2rem;
+    color: #FCF8E8;
+    float: left;
+    padding-top: 4px;   
+   }
+#listText{   
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3.3rem;
+    color: #FCF8E8;
+    float: left;
+    padding-left: 10px;
+}
+.addIcon{
+    color: lightblue;
+    font-size: 2.4rem;
+    position: absolute;
+    top: 14px;
+    right: 21%;
+}
+.addIcon:hover {
+    color: greenyellow;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#addItemText{
+    font-size: 2.4rem;
+    width: 20%;
+    height: 40px;
+    color: #FCF8E8;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: absolute;
+    top: 9%;
+    right: 0%;
+}
+#store{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    color: white;
+    position: absolute;
+    top: 150px;
+    margin: 0% 10% 0% 10%;
+}
+#noItemText{
+    color: #FCF8E8;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 130px;
+    left: 10%;
+}
+#separatePage{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 40%;
+    top:60px;
+    align-items: center;
+    visibility: hidden;
+}
+#top2{
+    width: 85%;
+}
+#back{
+    font-size: 44px;
+    border: none;
+    margin-top: 2px;
+    color: white;
+    background-color: #322F3D;
+}
+#back i{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#backText{
+    color: #F9F3EE;
+    font-size: 2.8rem;
+    position: absolute;
+    top: 2px;
+    margin-left: 20px;
+}
+.pop{
+    width: 30%;
+    height: 230px;
+    box-sizing: border-box;
+    background: aliceblue;
+    border: 2px solid blue;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px turquoise;
+    position: absolute;
+    top: 200px;
+    left: 34%;
+    justify-content: center;
+    z-index: 1;
+}
+.popTitle{
+    font-size: 1.8rem;
+    color: darkblue;
+    text-align: center;
+}
+.inputBoxOne{
+    width: 80%;
+    height: 34px;
+    box-shadow: 2px 2px 4px olivedrab;
+    font-size: large;
+    color: white;
+    background: rgba(0, 0, 0, 0.801);
+    border: 1px solid chocolate;
+    box-sizing: border-box;
+    margin-left: 10%;
+    border-radius: 5px;
+    text-align: center;
+}
+.add{
+    width: 22%;
+    height: 34px;
+    border: none;
+    box-shadow: 2px 2px 3px rgb(229, 174, 239);
+    font-size: 1.2rem;
+    margin-top: 26px;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: greenyellow;
+    color: purple;
+    position: relative;
+    left: 22%;
+}
+.close{
+    width: 22%;
+    height: 34px;
+    border: none;
+    box-shadow: 2px 2px 3px rgb(229, 174, 239);
+    font-size: 1.2rem;
+    margin-top: 26px;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: greenyellow;
+    color: purple;
+    position: relative;
+    left: 28%;
+}
+.add:hover , .close:hover{
+    background-color: #2e0953;
+    box-shadow: 2px 2px 3px gold;
+    color: #F7FD04;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.tripBox{
+    width: 250px;
+    height: 340px;
+    margin-bottom: 50px;
+    border: 2px solid purple;
+    box-shadow: 2px 2px 6px rgb(167, 167, 252);
+    border-radius: 6px;
+    background-color: #F9F3EE;
+}
+.tripHeading{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #143F6B;
+    text-align: center;
+    margin-top: 10px;
+}
+.hr{
+    color: orange;
+}
+.holder{
+    width: 80%;
+    height: 44px;
+    position: relative;
+    top: 220px;
+    left: 30px;
+    display: flex;
+}
+.plusIcon{
+    position: absolute;
+    right: 2%;
+    box-sizing: border-box;
+    font-size: 40px;
+    color: red;
+}
+.trashIcon{
+    position: absolute;
+    right: 30%;
+    box-sizing: border-box;
+    font-size: 40px;
+    color: blue;
+}
+.plusIcon:hover {
+    color: #3B0000;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.trashIcon:hover{
+    color: #1B262C;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.newTask{
+    position: relative;
+    margin-bottom: 2px;
+}
+.taskFont{  
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: capitalize;
+    font-weight: bold; 
+    font-size: 22px;
+    color: indigo;
+    padding: 4px;
+}
+.mark{
+    background-color: #FF7800;
+    border: none;
+    padding: auto auto;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    border-radius:10px;
+    position: absolute;
+    top: 2px;
+    right: 16px;
+}
+#separatePage{
+    /* font-size: 30px; */
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    top:50px;
+}
+#bigTripText{
+    font-size: 3.2rem;
+    color: hotpink;
+    text-transform: capitalize;
+}
+#top2{
+    display: flex;
+}
