@@ -13,10 +13,6 @@ body{
 .pageBlur{
     filter: blur(8px);
 }
-/* 
-      font-family: 'Bubblegum Sans', cursive;
-      font-family: 'Comfortaa', cursive;
- */
 #main{
     display: flex;
     flex-wrap: wrap;
