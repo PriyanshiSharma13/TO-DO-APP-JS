@@ -6,6 +6,7 @@ const addIcon = document.querySelector(".addIcon");
 const showPop = document.querySelector("#showPop");
 const noItemText = document.querySelector("#noItemText");   
 const store = document.querySelector("#store");
+const top2 = document.querySelector("#top2");
 
 //-----------------------------------------------------
 
@@ -14,6 +15,7 @@ const store = document.querySelector("#store");
 addIcon.addEventListener("click", function(){
 
     mainContainer.classList.add("mainContainerBlur");
+    separatePage.classList.add("pageBlur");
 
     const pop = document.createElement('div');
     pop.classList = "pop";
@@ -51,6 +53,7 @@ addIcon.addEventListener("click", function(){
     add.addEventListener("click", function(){
 
         noItemText.style.display = "none";
+        separatePage.classList.remove("pageBlur");
 
         const tripBox = document.createElement('div');
         tripBox.classList = "tripBox";
@@ -61,8 +64,11 @@ addIcon.addEventListener("click", function(){
         const hr = document.createElement("hr");
         hr.classList = "hr";
 
+        // const listBox = document.createElement('div');
+        // listBox.classList = "listBox";
+
         const holder = document.createElement('div');
-        holder.classList = "holder"
+        holder.classList = "holder";
 
         const plusIcon = document.createElement('div');
         plusIcon.classList = "plusIcon";
@@ -76,6 +82,7 @@ addIcon.addEventListener("click", function(){
         store.appendChild(tripBox); 
         tripBox.appendChild(tripHeading);
         tripBox.appendChild(hr);
+        // tripBox.appendChild(listBox);
         tripBox.appendChild(holder);
         holder.appendChild(plusIcon);
         holder.appendChild(trashIcon);
@@ -89,6 +96,8 @@ addIcon.addEventListener("click", function(){
             tripBox.querySelector("#tripBox");
             tripBox.style.width = "280px";
             tripBox.style.height = "400px";
+
+            addIcon.style.visibility = "visible";
 
             const bigTripText = document.querySelector("#bigTripText");
             bigTripText.innerText = inputBoxOne.value;
@@ -113,8 +122,7 @@ addIcon.addEventListener("click", function(){
 
                 tripBox.style.width = "250px";
                 tripBox.style.height = "340px";
-                tripBox.remove();  
-                store.appendChild(tripBox);
+                tripBox.remove();
                 mainContainer.style.visibility="visible"; 
                 separatePage.style.visibility="hidden";
             });

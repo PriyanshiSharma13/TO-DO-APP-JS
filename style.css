@@ -51,6 +51,7 @@ body{
     position: absolute;
     top: 14px;
     right: 21%;
+    z-index: 15;
 }
 .addIcon:hover {
     color: greenyellow;
@@ -206,6 +207,12 @@ body{
 .hr{
     color: orange;
 }
+/* .listBox{
+    width: 80%;
+    height: 250px;
+    position: relative;
+    top: 50px;
+} */
 .holder{
     width: 80%;
     height: 44px;
@@ -265,7 +272,6 @@ body{
     right: 16px;
 }
 #separatePage{
-    /* font-size: 30px; */
     display: flex;
     visibility: hidden;
     flex-direction: column;
@@ -281,4 +287,115 @@ body{
 }
 #top2{
     display: flex;
+}
+
+/* Adding Media Query for Mobile */
+@media screen and (max-width: 350px){
+    #ps{
+        font-size: 11px;
+        margin-top: 10px;
+    }
+    #top{
+        top: 40px;
+        left: 2%;
+    }
+    #taskText{
+        font-size: 1.9rem;
+    }
+    #listText{
+        font-size: 2.0rem;
+    }
+    .addIcon{
+        top: 10px;
+        font-size: 1.3rem;
+        margin-right: 2px;
+    }
+    #addItemText{
+        font-size: 0.885rem;
+        top: 12%;
+    }
+    #noItemText{
+        font-size: 0.99rem;
+        top: 90px;
+        left: 3%;
+    }
+    .pop{
+        width: 80%;
+        height: 150px;
+        box-shadow: 1px 1px 2px turquoise;
+        left: 10%;
+        background: aliceblue;
+    }
+    .popTitle{
+        font-size: 1.2rem;
+    }
+    .inputBoxOne{
+        height: 20px;
+        margin-top: 2px;
+        box-shadow: 1px 1px 2px olivedrab;
+        font-size: small;
+    }
+    .add{
+        width: 25%;
+        height: 20px;
+        font-size: 0.8rem;
+        margin-left: 1px;
+    }
+    .close{
+        width: 25%;
+        height: 20px;
+        font-size: 0.8rem;
+        margin-left: 1px;
+    }
+    #store{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+        color: white;
+        position: absolute;
+        top: 150px;
+        margin: 0% 5% 0% 5%;
+    }
+    .tripBox{
+        width: 104px;
+        height: 170px;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 2px rgba(148, 148, 255, 0.856);
+    }
+    .hr{
+        color: orange;
+    }
+    .tripHeading{
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 4px;
+    }
+    .holder{
+        position: relative;
+        top: 85px;
+        left: 10px;
+    }
+    .plusIcon{
+        font-size: 20px;
+    }
+    .trashIcon{
+        font-size: 20px;
+        margin-right: 4px;
+    }
+    /* .newTask{
+        position: relative;
+        top: 0px;
+    } */
+    .taskFont{
+        font-size: 14px;
+        padding: 1px;
+    }
+    .mark{
+        font-size: 10px;
+        padding: 1px 1px;
+        top: 0;
+        right: 2%;
+    }
 }
